@@ -1,0 +1,43 @@
+{
+  "name": "slidev-theme-poke",
+  "version": "0.1.1",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "author": "slgu<slgu@cybozu.cn>",
+  "homepage": "https://github.com/GuSanle",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md --open",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png",
+    "release": "pnpm dlx bumpp --files package.json",
+    "publish": "pnpm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuSanle/slidev-theme-kintone.git"
+  },
+  "dependencies": {
+    "@slidev/types": "^0.50.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^0.50.0"
+  },
+  "//": "Learn more: https://sli.dev/guide/write-theme.html",
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "fonts": {
+        "sans": "Nunito Sans",
+        "mono": "Fira Code"
+      }
+    }
+  }
+}

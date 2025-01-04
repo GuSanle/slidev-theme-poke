@@ -1,0 +1,57 @@
+:root {
+  --kintone-header-img: '';
+  --kintone-footer-img: '';
+  --kintone-logo-img: '';
+}
+
+.kintone-layout {
+  @apply px-14 py-10;
+  padding-top: calc(60px + 2.5rem);
+  padding-bottom: calc(60px + 2.5rem);
+  position: relative;
+}
+
+.kintone-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-image: var(--kintone-header-img);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  z-index: 10;
+}
+
+.kintone-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-image: var(--kintone-footer-img);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  z-index: 10;
+}
+
+.kintone-logo {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 100px;
+  height: 40px;
+  background-image: var(--kintone-logo-img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* 修改这些属性 */
+  z-index: 1;  /* 改为较小的值，确保在内容下层 */
+  pointer-events: none;  /* 使其不影响鼠标事件 */
+  opacity: 0.8;  /* 可选：降低透明度使其更像水印 */
+}
+
+
+
